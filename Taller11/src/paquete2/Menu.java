@@ -18,10 +18,9 @@ public abstract class Menu {
     protected double val_inicial;
     protected String nombrePlato;
 
-    public Menu(double v, String n) {
-        val_inicial = v;
-
+    public Menu(String n, double v) {
         nombrePlato = n;
+        val_inicial = v;
 
     }
 

@@ -14,8 +14,8 @@ public class MenuEconomico extends Menu {
 
     public double porcentaje;
 
-    public MenuEconomico(double v, String n, double p) {
-        super(v, n);
+    public MenuEconomico( String n,double v, double p) {
+        super(n, v);
 
         porcentaje = p;
 

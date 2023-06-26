@@ -5,33 +5,66 @@
  */
 package paquete01;
 
+import java.util.ArrayList;
+import paquete2.*;
+
+import paquete3.*;
+
 /**
  *
  * @author reroes
  */
 public class Ejecutor01 {
 
-    /**
-     * @param args the command line arguments
-     */
+    /*
+        En dicho método se debe crear lo siguiente:
+        Dos objetos de tipo menú de niños
+        Un objeto de tipo menú de económico
+        Un objeto de tipo menú del día
+        Un objeto de tipo menú a la carta.
+        Un objeto de tipo Cuenta (con datos iniciales como: nombre del cliente, 
+        IVA, listado de cartas -menú-, valor a cancelar total
+        Hacer uso del método toString para presentar toda la información posible 
+        del objeto Cuenta (nombre del cliente, subtotal, iva, listado de todos los 
+        menú, valor a cancelar a total.
+    */
     public static void main(String[] args) {
-        // TODO code application logic here
+        ArrayList<Menu> lista = new ArrayList<>();
+        
+        Menu menuNi = new MenuNinios("Niños 01", 2.00, 1.00, 1.50);
+        Menu menuNi2 = new MenuNinios("Niños 02", 3.00, 1.00, 1.50);
+        Menu menuEc = new MenuEconomico("Econo001", 4.00, 25.00);
+        Menu menuDia = new MenuDia("Dia 001", 5.00, 1.00, 1.00);
+        Menu menuCarta = new MenuCarta("Carta 001", 6.0, 1.5, 2.0, 10.00);
+        
+        lista.add(menuNi);
+        lista.add(menuNi2);
+        lista.add(menuEc);
+        lista.add(menuDia);
+        lista.add(menuCarta);
+        
+        for (int i = 0; i < lista.size(); i++) {
+            lista.get(i).calcularVal_menu();
+        }
+        
+        Cuenta miCuenta = new Cuenta("René Elizalde", lista, 10);
+        miCuenta.establecerSubtotal();
+        miCuenta.establecerValorCancelar();
+        System.out.printf("%s\n", miCuenta);
     }
-    
-    
 }
 // lo que debe presentar
 /*
 Factura
 Cliente: René Elizalde
-Menu del Día:
+Menu de Niños:
 	Plato: Niños 01
 	Valor Inicial: 2,00
 	Valor helado: 1,00
 	Valor pastel: 1,50
 	Valor del Menú: 4,50
 
-Menu del Día:
+Menu de Niños:
 	Plato: Niños 02
 	Valor Inicial: 3,00
 	Valor helado: 1,00
