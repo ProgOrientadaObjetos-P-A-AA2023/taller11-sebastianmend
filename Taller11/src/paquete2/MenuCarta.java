@@ -12,9 +12,9 @@ package paquete2;
  */
 public class MenuCarta extends Menu {
 
-    public double val_guarnicion;
-    public double val_bebida;
-    public double porcentaje;
+    private double val_guarnicion;
+    private double val_bebida;
+    private double porcentaje;
 
     public MenuCarta(String n,double v, double vg,
             double vb, double p) {

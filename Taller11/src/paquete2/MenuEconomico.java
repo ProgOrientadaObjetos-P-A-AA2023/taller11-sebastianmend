@@ -12,7 +12,7 @@ package paquete2;
  */
 public class MenuEconomico extends Menu {
 
-    public double porcentaje;
+    private double porcentaje;
 
     public MenuEconomico( String n,double v, double p) {
         super(n, v);
