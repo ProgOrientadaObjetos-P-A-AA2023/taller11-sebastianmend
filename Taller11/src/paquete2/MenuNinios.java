@@ -50,9 +50,9 @@ public class MenuNinios extends Menu {
     public String toString() {
         String cadena = String.format("Menu de Niños:\n"
                 + "%s"
-                + "\tValor helado: %.2f\n"
-                + "\tValor pastel: %.2f\n"
-                + "\tValor del Menú: %.2f\n", 
+                + "Valor helado: %.2f\n"
+                + "Valor pastel: %.2f\n"
+                + "Valor del Menú: %.2f\n", 
                 super.toString(), 
                 obtenerValorHelado(),
                 obtenerValorPastel(),

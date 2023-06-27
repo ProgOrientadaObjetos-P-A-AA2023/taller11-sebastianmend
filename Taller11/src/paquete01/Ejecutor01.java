@@ -16,18 +16,7 @@ import paquete3.*;
  */
 public class Ejecutor01 {
 
-    /*
-        En dicho método se debe crear lo siguiente:
-        Dos objetos de tipo menú de niños
-        Un objeto de tipo menú de económico
-        Un objeto de tipo menú del día
-        Un objeto de tipo menú a la carta.
-        Un objeto de tipo Cuenta (con datos iniciales como: nombre del cliente, 
-        IVA, listado de cartas -menú-, valor a cancelar total
-        Hacer uso del método toString para presentar toda la información posible 
-        del objeto Cuenta (nombre del cliente, subtotal, iva, listado de todos los 
-        menú, valor a cancelar a total.
-    */
+    
     public static void main(String[] args) {
         ArrayList<Menu> lista = new ArrayList<>();
         
@@ -53,7 +42,7 @@ public class Ejecutor01 {
         System.out.printf("%s\n", miCuenta);
     }
 }
-// lo que debe presentar
+
 /*
 Factura
 Cliente: René Elizalde
