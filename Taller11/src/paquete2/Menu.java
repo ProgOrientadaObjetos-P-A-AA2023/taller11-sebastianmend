@@ -24,7 +24,7 @@ public abstract class Menu {
 
     }
 
-    public abstract void calcularVal_menu();
+    public abstract void establecerValorMenu();
 
     public void establecerVal_inicial(double val_inicial) {
         this.val_inicial = val_inicial;

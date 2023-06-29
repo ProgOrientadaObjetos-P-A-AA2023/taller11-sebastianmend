@@ -33,7 +33,7 @@ public class Ejecutor01 {
         lista.add(menuCarta);
         
         for (int i = 0; i < lista.size(); i++) {
-            lista.get(i).calcularVal_menu();
+            lista.get(i).establecerValorMenu();
         }
         
         Cuenta miCuenta = new Cuenta("René Elizalde", lista, 10);

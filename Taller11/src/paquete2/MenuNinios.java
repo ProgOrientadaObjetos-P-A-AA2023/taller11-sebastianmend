@@ -42,7 +42,7 @@ public class MenuNinios extends Menu {
     }
     
     @Override
-    public void calcularVal_menu() {
+    public void establecerValorMenu() {
         val_menu = val_inicial+valorPastel+valorHelado;
     }
     

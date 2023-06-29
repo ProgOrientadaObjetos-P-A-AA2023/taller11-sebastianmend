@@ -30,7 +30,7 @@ public class MenuDia extends Menu {
         this.val_bebida = val_bebida;
     }
     @Override
-    public void calcularVal_menu() {
+    public void establecerValorMenu() {
         val_menu = val_inicial + val_bebida + val_postre;
     }
 

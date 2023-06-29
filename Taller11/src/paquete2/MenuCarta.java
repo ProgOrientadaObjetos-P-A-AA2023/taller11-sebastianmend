@@ -38,7 +38,7 @@ public class MenuCarta extends Menu {
     }
 
     @Override
-    public void calcularVal_menu() {
+    public void establecerValorMenu() {
         val_menu = (val_inicial + val_bebida + val_guarnicion)+(val_inicial*porcentaje/100);
     }
 
