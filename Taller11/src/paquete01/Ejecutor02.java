@@ -73,7 +73,8 @@ public class Ejecutor02 {
                     valorPastel = Double.parseDouble(datos001[i][j]);
                 }
             }
-            MenuNinios menuNinos = new MenuNinios(nombrePlato, valorInicial, valorHelado, valorPastel);
+            MenuNinios menuNinos = new MenuNinios(nombrePlato,
+                    valorInicial, valorHelado, valorPastel);
             menuNinos.establecerValorMenu();
             lista.add(menuNinos);
         }
@@ -90,7 +91,8 @@ public class Ejecutor02 {
                     porcentajeDescuento = Double.parseDouble(datos002[i][j]);
                 }
             }
-            MenuEconomico menuEco = new MenuEconomico(nombrePlato, valorInicial, porcentajeDescuento);
+            MenuEconomico menuEco = new MenuEconomico(nombrePlato, 
+                    valorInicial, porcentajeDescuento);
             menuEco.establecerValorMenu();
             lista.add(menuEco);
         }
@@ -109,7 +111,8 @@ public class Ejecutor02 {
                     valorPostre = Double.parseDouble(datos003[i][j]);
                 }
             }
-            MenuDia menuDia = new MenuDia(nombrePlato, valorInicial, valorBebida, valorPostre);
+            MenuDia menuDia = new MenuDia(nombrePlato, valorInicial,
+                    valorBebida, valorPostre);
             menuDia.establecerValorMenu();
             lista.add(menuDia);
         }
@@ -133,7 +136,8 @@ public class Ejecutor02 {
                 }
 
             }
-            MenuCarta menuCarta = new MenuCarta(nombrePlato, valorInicial, valorGuarnicion, valorBebida, porcentajeAdicional);
+            MenuCarta menuCarta = new MenuCarta(nombrePlato, valorInicial,
+                    valorGuarnicion, valorBebida, porcentajeAdicional);
             menuCarta.establecerValorMenu();
             lista.add(menuCarta);
         }
